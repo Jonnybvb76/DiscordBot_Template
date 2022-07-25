@@ -18,7 +18,7 @@ public class Setup extends ListenerAdapter {
 
     @Override
     public void onReady(@NotNull ReadyEvent event) {
-        DiscordBot.guild = DiscordBot.INSTANCE.getShardManager().getGuildById("971791531742756956"); // Set the test Guild where your first commands will be loaded
+        DiscordBot.guild = DiscordBot.INSTANCE.getShardManager().getGuildById("GUILD_ID"); // Set the test Guild where your first commands will be loaded
         events();
         commands();
         ZoneId zoneid = ZoneId.of("Europe/Paris"); // Set The Timezone
